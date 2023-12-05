@@ -9,7 +9,7 @@ void startGame();
 void setUpGameBoard(string gameBoard[rows][columns]);
 void currentBoardVisual(string gameBoard[rows][columns]);
 void userEntry(bool xTurn, string gameBoard[rows][columns]);
-bool cellAvailableOrNot(int row, int column, string gameBoard[rows][columns]);
+void cellAvailableOrNot(int row, int column, string gameBoard[rows][columns]);
 string decWinner(string gameBoard[rows][columns]);
 bool isBoardFull(string gameBoard[rows][columns]);
 
@@ -88,7 +88,7 @@ void setUpGameBoard(string gameBoard[rows][columns])
 
 void currentBoardVisual(string gameBoard[rows][columns])
 {
-	for (int i = 0; i < rows: i++)
+	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
 		{
@@ -121,7 +121,7 @@ void userEntry(bool xTurn, string gameBoard[rows][columns])
 		cout << "Please enter the row followed by the column separated by space from 0,1 and 2 " << endl;
 		cin >> ROW;
 		cin >> COLUMN;
-		if (if ROW >= 0 && COLUMN >= 0 && ROW <= 2 && COLUMN <= 2)
+		if (ROW >= 0 && COLUMN >= 0 && ROW <= 2 && COLUMN <= 2)
 		{
 			//Input by the user is valid
 			// Now checking if the place already occupied by an X or O
@@ -157,7 +157,7 @@ void userEntry(bool xTurn, string gameBoard[rows][columns])
 //----------Cell Occupancy Checking--------------------\\
 //-----------------------------------------------------\\
 
-bool cellAvailablbeOrNot(int rows, int columns, string gameBoard[rows][columns])
+void cellAvailablbeOrNot(int rows, int columns, string gameBoard[rows][columns])
 {
 	return gameBoard[rows][columns] != " ";
 	//if not a space then it is occupied by O or X
@@ -220,7 +220,7 @@ bool isBoardFull(string gameBoard[rows][columns])
 	{
 		for (int j = 0; j < columns; j++)
 		{
-			if (gameBoard != " ")
+			if (gameBoard[i][j] != " ")
 			{
 				countNonEmpty++;
 			}
