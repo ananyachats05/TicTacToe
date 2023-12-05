@@ -20,9 +20,9 @@ int main()
 	return 0;
 
 }
-// ---------------------------------------------------------\\
-//------------The game loop : startGame---------------------\\
-//-----------------------------------------------------------\\
+// ---------------------------------------------------------
+//------------The game loop : startGame---------------------
+//-----------------------------------------------------------
 
 void startGame()
 {
@@ -67,9 +67,9 @@ void startGame()
 	}
 	cout << endl;
 }
-//-----------------------------------------------------\\
-//---------Setting Up The Board------------------------\\
-//------------------------------------------------------\\
+//-----------------------------------------------------
+//---------Setting Up The Board------------------------
+//-----------------------------------------------------
 
 void setUpGameBoard(string gameBoard[rows][columns])
 {
@@ -82,9 +82,9 @@ void setUpGameBoard(string gameBoard[rows][columns])
 	}
 
 }
-//-----------------------------------------------------\\
-//-----------Current Board Visual as a matrix----------\\
-//------------------------------------------------------\\
+//-----------------------------------------------------
+//-----------Current Board Visual as a matrix----------
+//-----------------------------------------------------
 
 void currentBoardVisual(string gameBoard[rows][columns])
 {
@@ -107,9 +107,9 @@ void currentBoardVisual(string gameBoard[rows][columns])
 	}
 	cout << endl;
 }
-//-------------------------------------------------\\
-//------------Input from User in Chances-----------\\
-//-------------------------------------------------\\
+//-------------------------------------------------
+//------------Input from User in Chances-----------
+//-------------------------------------------------
 
 void userEntry(bool xTurn, string gameBoard[rows][columns])
 {
@@ -153,9 +153,9 @@ void userEntry(bool xTurn, string gameBoard[rows][columns])
 }
 // defining of the cell occupancy check loop used above
 
-//-----------------------------------------------------\\
-//----------Cell Occupancy Checking--------------------\\
-//-----------------------------------------------------\\
+//-----------------------------------------------------
+//----------Cell Occupancy Checking--------------------
+//-----------------------------------------------------
 
 bool cellAvailablbeOrNot(int ROW, int COLUMN, string gameBoard[rows][columns])
 {
@@ -163,9 +163,9 @@ bool cellAvailablbeOrNot(int ROW, int COLUMN, string gameBoard[rows][columns])
 	//if not a space then it is occupied by O or X
 }//ends here
 
-//-----------------------------------------------------\\
-//---------------Check for Winner----------------------\\
-//-----------------------------------------------------\\
+//-----------------------------------------------------
+//---------------Check for Winner----------------------
+//-----------------------------------------------------
 
 string decWinner(string gameBoard[rows][columns])
 {
@@ -211,7 +211,7 @@ string decWinner(string gameBoard[rows][columns])
 
 // defining board full or not checking function
 
-//-------------Board Full Or Not-------------------\\
+//-------------Board Full Or Not-------------------
 
 bool isBoardFull(string gameBoard[rows][columns])
 {
