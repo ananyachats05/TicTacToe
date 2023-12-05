@@ -9,7 +9,7 @@ void startGame();
 void setUpGameBoard(string gameBoard[rows][columns]);
 void currentBoardVisual(string gameBoard[rows][columns]);
 void userEntry(bool xTurn, string gameBoard[rows][columns]);
-void cellAvailableOrNot(int row, int column, string gameBoard[rows][columns]);
+bool cellAvailableOrNot(int row, int column, string gameBoard[rows][columns]);
 string decWinner(string gameBoard[rows][columns]);
 bool isBoardFull(string gameBoard[rows][columns]);
 
@@ -157,9 +157,9 @@ void userEntry(bool xTurn, string gameBoard[rows][columns])
 //----------Cell Occupancy Checking--------------------\\
 //-----------------------------------------------------\\
 
-void cellAvailablbeOrNot(int rows, int columns, string gameBoard[rows][columns])
+bool cellAvailablbeOrNot(int ROW, int COLUMN, string gameBoard[rows][columns])
 {
-	return gameBoard[rows][columns] != " ";
+	return gameBoard[ROW][COLUMN] != " ";
 	//if not a space then it is occupied by O or X
 }//ends here
 
